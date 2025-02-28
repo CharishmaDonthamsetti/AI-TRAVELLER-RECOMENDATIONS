@@ -3,11 +3,10 @@ import google.generativeai as genai
 import json
 from datetime import datetime
 
-# Configure API Key (replace with your valid API key)
-API_KEY = "AIzaSyDX-UyxgsUZZiVBjfe4GFPxXOXEVjx_igQ"
+API_KEY = "YOUR API KEY"
 genai.configure(api_key=API_KEY)
 
-# Custom CSS for a sleek UI
+
 st.markdown(
     """
     <style>
@@ -93,7 +92,7 @@ def generate_travel_summary(travel_info):
     
     return summary
 
-# Streamlit UI
+
 st.markdown("<div class='main-title'>🌍 AI Travel Planner</div>", unsafe_allow_html=True)
 st.markdown("<div class='sub-title'>Plan your trip with real-time recommendations</div>", unsafe_allow_html=True)
 
@@ -129,6 +128,3 @@ if st.button("Find Travel Options", use_container_width=True):
                         )
     else:
         st.error("Please enter both departure and destination cities.")
-
-
-# Let me know if you want me to add anything else or fine-tune the design further! 🚀
